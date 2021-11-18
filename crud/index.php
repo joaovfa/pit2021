@@ -1,26 +1,3 @@
-<?php
-
-require_once "inc/config.php";
-require_once "controller/UsuarioController.php";
-require_once "model/Usuario.php";
-
-$app = new UsuarioController();
-
-if ( isset($_GET['acao']) ){
-
-    if( $_GET['acao']=='create' ){
-        $app->create();
-    }else if ( $_GET['acao']=='update' ){
-        $app->update();
-    }else if ( $_GET['acao']=='delete'){
-        $app->delete();
-    }
-
-}else{
-    $app->all();
-}
-
-?>
 
 <!doctype html>
 <html lang="en">
@@ -38,16 +15,35 @@ if ( isset($_GET['acao']) ){
 
 
     <!-- Template Customizado -->
-    <link href="/crud/css/style.css" rel="stylesheet">
+    <link href="css/pag.css" rel="stylesheet">
   </head>
+  
+  <body class="text-center">
 
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+      <header class="masthead mb-auto">
+        <div class="inner">
+          <h3 class="masthead-brand">Home</h3>
+          <nav class="nav nav-masthead justify-content-center">
+            <a class="nav-link active" href="index.php">Home</a>
+            <a class="nav-link" href="quemsomos.php">Quem somos</a>
+            <a class="nav-link" href="login.php">Login</a>
+          </nav>
+        </div>
+      </header>
 
-  <body>
+      <main role="main" class="inner cover">
+          <div id="page">
+              <img src="img/logo.jpeg" alt="">
 
-
-
-
-
+          </div>
+          
+        <h1 class="cover-heading">Nossos cursos</h1>
+        <p class="lead">Acessando nossa aba de cursos você podera ter acesso a materiais já organizados tanto de emagrecimento feminimo, 
+    masculino e ganho de massa muscular para homens e mulheres</p>
+        <p class="lead">
+          <a href="#" class="btn btn-lg btn-secondary">Saiba mais</a>
+        </p>
+      </main>
+    </div>
   </body>
-
-</html>

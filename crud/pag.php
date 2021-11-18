@@ -157,13 +157,13 @@
 
     <div class="p-5 mb-4 bg-light rounded-3">
       <div class="container-fluid py-5">
-        <h1 class="display-5 fw-bold">Teste</h1>
+        <h1 class="display-5 fw-bold">Seja bem vindo!</h1>
         <p class="col-md-8 fs-4">
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste 
+        Nessa página você encontrará calculadoras de dieta para o objetivo de emagrecimento, e entenderá um pouco mais sobre seu corpo. 
+        Todas as pessoas possuem em seu corpo uma quantidade calórica que é gasta em estado de repouso diariamente para sobrevivência e 
+        manter funções vitais em funcionamento como órgãos e temperatura corporal. Para se fazer este calculo possuímos uma fórmula matemática 
+        não exata chamada de Taxa Metabólica Basal ou por sua sigla TMB
+
         </p>
         <button class="btn btn-primary btn-lg" type="button">Mais</button>
       </div>
@@ -172,26 +172,26 @@
     <div class="row align-items-md-stretch">
       <div class="col-md-6">
         <div class="h-100 p-5 text-white bg-dark rounded-3">
-          <h2>Teste</h2>
+          <h2>Nosso Propósito</h2>
           <p>
-            Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste Texto para teste 
-          Texto para teste Texto para teste Texto para teste 
+          A “nosso nome” é uma startup com o principal objetivo de ajudar as pessoas a concluírem 
+    seus objetivos da maneira mais simples e rápida possível no mundo fitness
+Possuímos a intenção de ajudar aos nossos usuários da plataforma a conquistarem a saúde e corpo 
+que sempre desejaram através de dicas gratuitas e objetivas como nunca foi visto anteriormente em 
+nenhuma outra empresa do ramo
+Nós nos comprometemos a utilizar toda nossa bagagem e experiência para ajudar você a concluir seus objetivos 
           </p>
           <button class="btn btn-outline-light" type="button">Mais</button>
         </div>
       </div>
       <div class="col-md-6">
         <div class="h-100 p-5 bg-light border rounded-3">
-          <h2>Teste</h2>
+          <h2>Faça a sua evolução conosco acontecer</h2>
           <p>
-            Texto para teste Texto para teste Texto para teste Texto para teste 
-            Texto para teste Texto para teste Texto para teste Texto para teste 
-            Texto para teste Texto para teste Texto para teste Texto para teste 
-            Texto para teste Texto para teste Texto para teste Texto para teste 
-            Texto para teste Texto para teste Texto para teste 
+          A partir das nossas soluções você não ira apenas melhorar sua saúde e físico. 
+Sua vida passará a ser outra pois com uma alimentação saudável e flexível o seu cotidiano 
+começará a fluir mais pois você se sentirá menos cansado, irá prevenir inúmeras doenças como ansiedade, 
+depressão, diabetes, doenças cardíacas entre outras. Terá aspectos de promovidos como saúde mental, espiritual e social. 
           </p>
           <button class="btn btn-outline-secondary" type="button">Mais</button>
         </div>

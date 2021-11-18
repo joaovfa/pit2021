@@ -236,3 +236,7 @@ input, select, textarea {
   tr, th, td {
       background-color: #d2f4ea;
   }
+
+  #lc{
+    background-color: white;
+  }

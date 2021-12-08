@@ -1,4 +1,3 @@
-//set width of results and info divs to the same as the input form width
 window.onload = () => {
     document.querySelector("#resultsContainer").style.width = window.getComputedStyle(document.querySelector("#inputsContainer")).getPropertyValue("width");
     document.querySelector("#infoContainer").style.width = window.getComputedStyle(document.querySelector("#inputsContainer")).getPropertyValue("width");  

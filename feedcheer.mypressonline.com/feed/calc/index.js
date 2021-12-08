@@ -47,8 +47,6 @@ function validateFormInputs(inputs) {
         return false;
     }
 
-
-    // getting values of dropdowns
     const gender = document.querySelector("#gender");
     const weightUnit = document.querySelector("#weightUnit");
     const heightUnit = document.querySelector("#heightUnit");
@@ -65,10 +63,7 @@ function validateFormInputs(inputs) {
 
 
 function calculateTDEEnoBF(gender, age, weight, weightUnit, height, heightUnit, activityMultiplier) {
-    // Mifflin St. Jeor
-    // Mifflin = (10.m + 6.25h - 5.0a) + s
-    // m is mass in kg, h is height in cm, a is age in years, s is +5 for males and -151 for females
-    
+
     const safeMinCalories = (gender === "M") ? MIN_CAL_MALE : MIN_CAL_FEMALE;
     const genderModifier = (gender === "M") ? MALE_CAL_MODIFIER : FEMALE_CAL_MODIFIER;
 
@@ -82,7 +77,6 @@ function calculateTDEEnoBF(gender, age, weight, weightUnit, height, heightUnit, 
 
     const BMR = (10 * weight) + (6.25 * height) - (5.0 * age) + genderModifier;
 
-    // if tdee is under safe min calories, then set tdee to safe min calories
     const TDEE = Math.max(safeMinCalories, Math.round(BMR * activityMultiplier));
 
     return TDEE;
@@ -91,9 +85,6 @@ function calculateTDEEnoBF(gender, age, weight, weightUnit, height, heightUnit, 
 
 
 function calculateTDEEwithBF(gender, weight, weightUnit, bodyFatPercent, activityMultiplier) {
-    // Katch-McArdle
-    // Katch = 370 + (21.6 * LBM)
-    // where LBM is lean body mass 
 
     const safeMinCalories = (gender === "M") ? MIN_CAL_MALE : MIN_CAL_FEMALE;
 
@@ -112,7 +103,6 @@ function calculateTDEEwithBF(gender, weight, weightUnit, bodyFatPercent, activit
 
 
 function calculateBMI(weight, weightUnit, height, heightUnit) {
-    // BMI = [weight(kg) / height(cm) / height(cm)] * 10,000
 
     if (weightUnit === "LBS") {
         weight *= KILOGRAMS_PER_POUND;

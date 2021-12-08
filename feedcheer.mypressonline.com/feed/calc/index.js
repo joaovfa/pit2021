@@ -59,8 +59,6 @@ function validateFormInputs(inputs) {
     return true;
 }
 
-
-
 function calculateTDEEnoBF(gender, age, weight, weightUnit, height, heightUnit, activityMultiplier) {
 
     const safeMinCalories = (gender === "M") ? MIN_CAL_MALE : MIN_CAL_FEMALE;

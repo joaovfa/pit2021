@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>FeedCheer</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="../img/logoti.png" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="index.css" rel="stylesheet" />
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+
+<body class="d-flex flex-column h-100">
+    <a id="link-topo" class="bi bi-house-fill" href="http://feedcheer.mypressonline.com/"></a>
+    <main class="flex-shrink-0">
+        <!-- Navigation-->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container px-5">
+                <a class="navbar-brand" href="./"><img src="../img/logo.png" alt="..." width="200" /></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation"><span
+                        class="navbar-toggler-icon"></span></button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="http://feedcheer.mypressonline.com/">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../about.html">Sobre nós</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php?acao=create">Tire suas duvidas</a></li>
+                        <li class="nav-item"><a class="nav-link" href="../index.php">Perguntas recentes</a>
+                        </li>
+                        <li class="nav-item"><a class="nav-link" href="./">Calculadora TMB/IMC</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <header class="bg-dark py-5">
+            <div class="container px-5">
+                <div class="row gx-5 align-items-center justify-content-center">
+                    <div class="col-lg-8 col-xl-7 col-xxl-6">
+                        <div class="my-5 text-center text-xl-start">
+                            <h1 class="display-5 fw-bolder text-white mb-2">Seja bem vindo!</h1>
+                            <p class="lead fw-normal text-white-50 mb-4">Nessa página você encontrará calculadoras de 
+                            dieta para o objetivo de ganho de peso, e entenderá um pouco mais sobre seu corpo. 
+Todas as pessoas possuem em seu corpo uma quantidade calórica que é gasta em estado de repouso diariamente para sobrevivência e 
+manter funções vitais em funcionamento como órgãos e temperatura corporal. Para se fazer este calculo possuímos uma fórmula 
+matemática não exata chamada de Taxa Metabólica Basal ou por sua sigla TMB
+</p>
+                       
+                        </div>
+                    </div>
+                    <div class="col-xl-5 col-xxl-6 d-none d-xl-block text-center"><img class="img-fluid rounded-3 my-5"
+                            src="feed/img/Nutricao.jpg" alt="..." /></div>
+                </div>
+            </div>
+        </header>
+
+        <!-- Features section-->
+        <section class="py-5" id="features">
+            <div class="container px-5 my-5">
+                <div class="row gx-5 justify-content-center">
+                    <div class="col-lg-8 col-xl-6">
+                        <table  class="d-flex flex-column bd-highlight mb-3">
+                            <tr style="align-items: center;">
+                                <td>
+                                    <h1>Calculadora TDEE/IMC</h1>
+                                </td>
+                            </tr>
+
+                            <tr>
+                                <td>
+                                    <div class="form-group">
+                                        <label for="gender">Sexo: </label>
+                                        <select class="form-control" id="gender">
+                                            <option value="M">Masculino</option>
+                                            <option value="F">Feminino</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="form-group">
+                                        <label for="age">Idade: </label>
+                                        <input class="form-control" type="number" id="age" min="0" max="999" required>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="weight">Peso: </label>
+                                        <input class="form-control" type="number" id="weight" min="0" max="999" required>
+                                        <select id="weightUnit">
+                                            <option value="KG">kg</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="height">Altura: </label>
+                                        <input class="form-control" type="number" id="height" min="0" max="999" required>
+                                        <select id="heightUnit">
+                                            <option value="CM">cm</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="activityLevel">Nivel de atividade: </label>
+                                        <select class="form-control"id="activityLevel">
+                                            <option value="1.2">Sedentário (não pratico exercicios)</option>
+                                            <option value="1.375">Exercícios leves (1-2 dias na semana)</option>
+                                            <option value="1.55">Exercício médio (3-5 dias na semana)</option>
+                                            <option value="1.725">Exercício pesado (6-7 dias na semana)</option>
+                                            <option value="1.9">Atleta (2 vezes por dia)</option>
+                                        </select>
+                                    </div>
+
+
+                                    <div class="form-group">
+                                        <label for="bf">Porcentagem de gordura corporal <br>(opcional, apenas se você tiver conhecimento dessa informação): </label>
+                                        <input class="form-control" type="number" id="bodyFatPercent" min="0" max="100">
+                                    </div>
+
+                                </td>
+                            </tr>
+
+                            <tr style="text-align:center">
+                                <td>
+                                    <div id="submitBtnBox">
+                                        <br />
+                                        <button style="background-color: #FA1B4A;" type="submit" id="submitBtn" class="btn btn-lg px-4 me-sm-3">Calcular</button>
+                                    </div>
+                                </td>
+                            </tr>
+                        </table>
+                        <div id="infoContainer"></div>
+
+                        <div id="resultsContainer"></div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+    </main>
+    <!-- Footer-->
+    <footer class="bg-dark py-4 mt-auto">
+        <div class="container px-5">
+            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+                <div class="col-auto">
+                    <div class="small m-0 text-white">&copy; FeedCheer 2021</div>
+                </div>
+               
+            </div>
+        </div>
+    </footer>
+    <!-- Bootstrap core JS-->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Core theme JS-->
+    <script src="index.js"></script>
+</body>
+
+</html>

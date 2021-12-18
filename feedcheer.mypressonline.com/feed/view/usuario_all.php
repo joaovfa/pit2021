@@ -1,38 +1,3 @@
-
-
-<!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
-
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Exclusão</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
-      </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Tem certeza que deseja excluir o registro?
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <a id="modal-btn-excluir" href="" class="btn btn-primary">Sim</a>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
-      </div>
-
-    </div>
-  </div>
-</div>
-
-
-
-
-
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -48,15 +13,39 @@
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
   <!-- Core theme CSS (includes Bootstrap)-->
   <link href="css/styles.css" rel="stylesheet" />
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
 </head>
 
 <body class="d-flex flex-column h-100">
+  <!--Modal -->
+  <div class="modal" id="myModal">
+    <div class="modal-dialog">
+      <div class="modal-content">
+
+        <!--Modal Header-->
+        <div class="modal-header">
+          <h4 class="modal-title">Exclusão</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+
+        <!--Modal body-->
+        <div class="modal-body">
+          Tem certeza que deseja excluir o registro?
+        </div>
+
+        <!--Modal footer-->
+        <div class="modal-footer">
+          <a id="modal-btn-excluir" href="" class="btn btn-primary">Sim</a>
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
+        </div>
+
+      </div>
+    </div>
+  </div>
   <main class="flex-shrink-0">
     <!-- Navigation-->
     <!-- Navigation-->
-    
+
     <!-- Page Content-->
     <section class="py-5">
       <div class="container px-5 my-5">
@@ -87,7 +76,7 @@
                     <!--a href="?acao=delete&id=< ?=$usuario->id?>" class="btn btn-danger">Excluir</a-->
 
                     <!--Button to Open the Modal -->
-                    <button type="button" class="btn btn-danger btn-excluir" data-toggle="modal" data-target="#myModal" data-id="<?=$comentario->id?>">
+                    <button type="button" class="btn btn-danger btn-excluir" data-toggle="modal" data-target="#myModal" data-id="<?= $comentario->id ?>">
                       Excluir
                     </button>
                   </div>
@@ -97,48 +86,48 @@
               </div>
             </div>
           <?php } ?>
-         
-               
+
+
         </div>
       </div>
     </section>
     <!-- The Modal -->
-<div class="modal" id="myModal">
-  <div class="modal-dialog">
-    <div class="modal-content">
+    <div class="modal" id="myModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
 
-      <!-- Modal Header -->
-      <div class="modal-header">
-        <h4 class="modal-title">Exclusão</h4>
-        <button type="button" class="close" data-dismiss="modal">&times;</button>
+          <!-- Modal Header -->
+          <div class="modal-header">
+            <h4 class="modal-title">Exclusão</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+
+          <!-- Modal body -->
+          <div class="modal-body">
+            Tem certeza que deseja excluir o registro?
+          </div>
+
+          <!-- Modal footer -->
+          <div class="modal-footer">
+            <a id="modal-btn-excluir" href="" class="btn btn-primary">Sim</a>
+            <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
+          </div>
+
+        </div>
       </div>
-
-      <!-- Modal body -->
-      <div class="modal-body">
-        Tem certeza que deseja excluir o registro?
-      </div>
-
-      <!-- Modal footer -->
-      <div class="modal-footer">
-        <a id="modal-btn-excluir" href="" class="btn btn-primary">Sim</a>
-        <button type="button" class="btn btn-danger" data-dismiss="modal">Não</button>
-      </div>
-
     </div>
-  </div>
-</div>
   </main>
   <!-- Footer-->
   <footer class="bg-dark py-4 mt-auto">
-        <div class="container px-5">
-            <div class="row align-items-center justify-content-between flex-column flex-sm-row">
-                <div class="col-auto">
-                    <div class="small m-0 text-white">&copy; FeedCheer 2021</div>
-                </div>
-                
-            </div>
+    <div class="container px-5">
+      <div class="row align-items-center justify-content-between flex-column flex-sm-row">
+        <div class="col-auto">
+          <div class="small m-0 text-white">&copy; FeedCheer 2021</div>
         </div>
-    </footer>
+
+      </div>
+    </div>
+  </footer>
   <!-- Bootstrap core JS-->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"></script>
   <!-- Core theme JS-->
